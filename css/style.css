@@ -10176,3 +10176,85 @@ h6,
   font-size: 14px;
   color: #555;
 } 
+
+/* Ajuste de tamaño y estilo uniforme para las imágenes de servicios */
+.service-img {
+  width: 100%;
+  height: 250px;        /* Puedes ajustar este valor */
+  object-fit: cover;    /* Recorta para mantener proporción */
+  border-radius: 10px;  /* Esquinas redondeadas */
+  transition: transform 0.3s ease;
+}
+
+.service-img:hover {
+  transform: scale(1.03); /* Pequeño efecto al pasar el mouse */
+}
+
+#catalogo .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#catalogo .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#catalogo .card-img-top {
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+/* --- Sección del carrito profesional --- */
+#carrito {
+  background: #fff;
+  border-top: 5px solid #FFD700;
+  border-radius: 10px;
+  padding: 40px 0;
+}
+
+#carrito h2 {
+  font-weight: 800;
+  color: #2a2a2a;
+}
+
+#carrito table {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #f1f1f1;
+}
+
+#carrito thead {
+  background-color: #ffe066;
+  font-weight: bold;
+}
+
+#carrito td, #carrito th {
+  vertical-align: middle;
+}
+
+#checkout-btn, #clear-cart {
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 25px;
+}
+
+#checkout-btn {
+  background-color: #28a745;
+  border: none;
+}
+
+#checkout-btn:hover {
+  background-color: #218838;
+}
+
+#clear-cart {
+  background-color: #dc3545;
+  border: none;
+}
+
+#clear-cart:hover {
+  background-color: #c82333;
+}
